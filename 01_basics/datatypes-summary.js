@@ -27,5 +27,25 @@ const myFunciton = function () {
   console.log("hello world")
 }
 //typeof is use to know the data type
-console.log(typeof outsideTemp) //object
-console.log(typeof myFunciton) //function
+// console.log(typeof outsideTemp) //object
+// console.log(typeof myFunciton) //function
+
+//************************memory*************** */
+//stack memory( Primitive ) or heap memory (non-primitive)
+let myName = "Abhinav"
+let anotherName = myName
+console.log(anotherName)
+anotherName = "Kumar"
+console.log(anotherName)
+
+let userOne = {
+  email: "abhinav@gmail.com",
+  upi: "abhinav@ybl",
+}
+
+let userTwo = userOne
+
+userTwo.email = "abhinav@google.com"
+
+console.log(userOne.email)
+console.log(userTwo.email) //change in the object change in both
